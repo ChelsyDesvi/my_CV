@@ -1,8 +1,8 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif;
     /* untuk semua */
 }
 
@@ -14,13 +14,13 @@ body {
 
 }
 
-.resume { 
+.resume {
     display: flex;
     min-width: 800px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     /* titik trsbt karena memanggil class sedangkan # untuk memanggil id */
-} 
+}
 
 .sidebar {
     background-color: #2d2f39;
@@ -78,11 +78,13 @@ body {
 
 }
 
-.profil, experience {
+.profil,
+experience {
     margin-bottom: 20px;
 }
 
-.profil h3,experience h3 {
+.profil h3,
+experience h3 {
     font-size: 20px;
     color: #2d2f39;
     border-bottom: 2px solid #2d2f39;
@@ -90,7 +92,8 @@ body {
     margin-bottom: 10px;
 }
 
-.profil p,experience p {
+.profil p,
+experience p {
     font-size: 14px;
     line-height: 1.6;
 
@@ -100,4 +103,120 @@ body {
 .sidebar h2 {
     font-size: 20px;
     text-align: center;
+}
+
+@media (max-width:763px) {
+    .resume {
+        flex-direction: column;
+    }
+
+    .sidebar,
+    .main-content {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .sidebar {
+        align-items: flex-start;
+    }
+
+    .foto img {
+        width: 80px;
+        height: 80px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .job-title {
+        font-size: 15px;
+    }
+
+    .section h3 {
+        font-size: 13px;
+    }
+
+    .section p {
+        font-size: 10px;
+    }
+
+    .profil h3,
+    .experience h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:500px) {
+    .resume {
+        flex-direction: column;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .sidebar {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .foto img {
+        width: 60px;
+        height: 60px;
+    }
+
+    h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .job-title {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section h3 {
+        font-size: 13px;
+        padding: 5px;
+        border-radius: 3px;
+    }
+
+    .section p {
+        font-size: 10px;
+        margin-bottom: 8px;
+    }
+
+    .main-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .profil h3,
+    .experience h3 {
+        font-size: 15px;
+        padding-bottom: 4px;
+    }
+
+    .profil p,
+    .experience p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .experience strong {
+        font-size: 12px;
+    }
+
+    .sidebar,
+    .main-content {
+
+        padding: 10px;
+    }
+
 }
